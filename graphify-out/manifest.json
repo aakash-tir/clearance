@@ -1,0 +1,247 @@
+{
+  ".claude/.mcp.json": {
+    "mtime": 1794868098.0625198,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  ".claude/hooks/protect-main.sh": {
+    "mtime": 1794868104.453066,
+    "ast_hash": "608fb32b369876cfbba344359ccb073a",
+    "semantic_hash": ""
+  },
+  ".claude/settings.json": {
+    "mtime": 1794868111.6156335,
+    "ast_hash": "1e6c68defcb5aaba5701b7fabba72ab9",
+    "semantic_hash": ""
+  },
+  ".claude/skills/architecture-diagram/resources/generate_diagram.py": {
+    "mtime": 1794868098.1853397,
+    "ast_hash": "2691dbf85c989570823e2d462eed60d9",
+    "semantic_hash": ""
+  },
+  "backend/pyproject.toml": {
+    "mtime": 1794868171.1830194,
+    "ast_hash": "f024f8a37263c8c023dfbeeed1dad1a8",
+    "semantic_hash": ""
+  },
+  "backend/src/clearance/__init__.py": {
+    "mtime": 1794868126.2936954,
+    "ast_hash": "b4b29ae5d34eea5c375e5ebc1593a103",
+    "semantic_hash": ""
+  },
+  "backend/src/clearance/config.py": {
+    "mtime": 1794868131.7924874,
+    "ast_hash": "47d1c96947b78804225e9937ddab6c49",
+    "semantic_hash": ""
+  },
+  "backend/src/clearance/main.py": {
+    "mtime": 1794868289.3983815,
+    "ast_hash": "fdb3e9972ddb269118f7cadc2606f5e4",
+    "semantic_hash": ""
+  },
+  "backend/tests/test_config.py": {
+    "mtime": 1794868169.4576108,
+    "ast_hash": "d45a6173454f45460f4d17f189e6466d",
+    "semantic_hash": ""
+  },
+  "backend/tests/test_health.py": {
+    "mtime": 1794868144.3638163,
+    "ast_hash": "2a5bbe846cb1a8e41fe27c005e01f523",
+    "semantic_hash": ""
+  },
+  "frontend/.oxlintrc.json": {
+    "mtime": 1794868184.0295494,
+    "ast_hash": "029f4905006c1fffd96bc863e2d98d3e",
+    "semantic_hash": ""
+  },
+  "frontend/package.json": {
+    "mtime": 1794868246.1993575,
+    "ast_hash": "0610e32b4f5cf75466e28b0a4ba0af7e",
+    "semantic_hash": ""
+  },
+  "frontend/src/App.test.tsx": {
+    "mtime": 1794868262.6195989,
+    "ast_hash": "182a80fb9c8a2b4ac3da05d22e729fc2",
+    "semantic_hash": ""
+  },
+  "frontend/src/App.tsx": {
+    "mtime": 1794868287.5817094,
+    "ast_hash": "b16450bc36efaefd6bf5a16a369d4145",
+    "semantic_hash": ""
+  },
+  "frontend/src/main.tsx": {
+    "mtime": 1794868184.1975954,
+    "ast_hash": "787e5a07efeb2bf6209d5937195f2f68",
+    "semantic_hash": ""
+  },
+  "frontend/src/test-setup.ts": {
+    "mtime": 1794868264.2250736,
+    "ast_hash": "735625e49f8c384f92fc531487d0cde4",
+    "semantic_hash": ""
+  },
+  "frontend/tsconfig.app.json": {
+    "mtime": 1794868184.0576494,
+    "ast_hash": "5f2dafd737dea8a4ddcbb10f5113ac5a",
+    "semantic_hash": ""
+  },
+  "frontend/tsconfig.json": {
+    "mtime": 1794868184.0631812,
+    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
+    "semantic_hash": ""
+  },
+  "frontend/tsconfig.node.json": {
+    "mtime": 1794868184.0667002,
+    "ast_hash": "f9cb81ddcea69ffdab672fc8c48dca66",
+    "semantic_hash": ""
+  },
+  "frontend/vite.config.ts": {
+    "mtime": 1794868265.9500134,
+    "ast_hash": "feb935e3269b141134919ba785c69ade",
+    "semantic_hash": ""
+  },
+  ".claude/CLAUDE.md": {
+    "mtime": 1794868347.093882,
+    "ast_hash": "d30aaae79c9d759a12f33de922a0fffe",
+    "semantic_hash": ""
+  },
+  ".claude/progress.md": {
+    "mtime": 1794868384.2602127,
+    "ast_hash": "6d715aedc53a51d0ce1309f2302acf86",
+    "semantic_hash": ""
+  },
+  ".claude/project-context.md": {
+    "mtime": 1794868382.244882,
+    "ast_hash": "e2b739fcf9a9bc4c0c47027d82b20881",
+    "semantic_hash": ""
+  },
+  ".claude/rules/frontend/react.md": {
+    "mtime": 1794868098.0639393,
+    "ast_hash": "d41d8cd98f00b204e9800998ecf8427e",
+    "semantic_hash": ""
+  },
+  ".claude/rules/issue-workflow.md": {
+    "mtime": 1794868370.8368278,
+    "ast_hash": "c25d57e291eda0fa7d3d40f270badca5",
+    "semantic_hash": ""
+  },
+  ".claude/rules/learning-mode.md": {
+    "mtime": 1794868356.6818488,
+    "ast_hash": "87965613c28a0f5e1aa1fb52dc0ce36d",
+    "semantic_hash": ""
+  },
+  ".claude/skills/architecture-diagram/SKILL.md": {
+    "mtime": 1794868098.185852,
+    "ast_hash": "4c12623371ec585544e5b77cfd66d0e0",
+    "semantic_hash": ""
+  },
+  ".claude/skills/architecture-diagram/resources/template.html": {
+    "mtime": 1794868098.1753542,
+    "ast_hash": "523f7b64b1b5741cfe48fa553fe1e7f1",
+    "semantic_hash": ""
+  },
+  ".github/ISSUE_TEMPLATE/bug.yml": {
+    "mtime": 1794868320.9550948,
+    "ast_hash": "336b32704403eabc801caf3858a6ba22",
+    "semantic_hash": ""
+  },
+  ".github/ISSUE_TEMPLATE/feature.yml": {
+    "mtime": 1794868318.193973,
+    "ast_hash": "4e71f5780ca922e3f7cfa1fb33367b63",
+    "semantic_hash": ""
+  },
+  ".github/pull_request_template.md": {
+    "mtime": 1794868315.1975172,
+    "ast_hash": "6483988f5aa0e73fbdd8b228c669a785",
+    "semantic_hash": ""
+  },
+  ".github/workflows/backend.yml": {
+    "mtime": 1794868302.7442317,
+    "ast_hash": "d0a64fa2f5a2bb4e3fdddb691c612555",
+    "semantic_hash": ""
+  },
+  ".github/workflows/frontend.yml": {
+    "mtime": 1794868307.201656,
+    "ast_hash": "ac020271cdfc89b191a62f21c20d6fb3",
+    "semantic_hash": ""
+  },
+  "CLAUDE.md": {
+    "mtime": 1794868115.401614,
+    "ast_hash": "e92178a0544802bda95c080983ae215d",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1794868435.057027,
+    "ast_hash": "85c49e5d6d390fdb35732eb40982c133",
+    "semantic_hash": ""
+  },
+  "backend/README.md": {
+    "mtime": 1794868125.3237753,
+    "ast_hash": "558638ac5474fe5bd9855ba1ed2588e2",
+    "semantic_hash": ""
+  },
+  "docs/future.md": {
+    "mtime": 1794868429.7958465,
+    "ast_hash": "7ef4324a607734261be01cd2030d5383",
+    "semantic_hash": ""
+  },
+  "docs/history/plan-original.md": {
+    "mtime": 1794868052.311196,
+    "ast_hash": "4ee4af498a11cc2fa8c64667b850a1ab",
+    "semantic_hash": ""
+  },
+  "docs/learning/README.md": {
+    "mtime": 1794868425.9795794,
+    "ast_hash": "13e58111ac3b5e9e5cf74c020e0abeec",
+    "semantic_hash": ""
+  },
+  "docs/learning/concepts.md": {
+    "mtime": 1794868048.9245,
+    "ast_hash": "d55618200543449078ddb1d0939b4438",
+    "semantic_hash": ""
+  },
+  "docs/learning/scaffold-file-guide.md": {
+    "mtime": 1794868410.3478286,
+    "ast_hash": "a9eb527da139afd9ce0fa50e32fc5088",
+    "semantic_hash": ""
+  },
+  "docs/learning/test-guide.md": {
+    "mtime": 1794868422.79415,
+    "ast_hash": "4868e1e4ad64d18303be5afc439e627e",
+    "semantic_hash": ""
+  },
+  "docs/research/01-market-and-competitors.md": {
+    "mtime": 1794867983.6364665,
+    "ast_hash": "7addced32bb5cbc0a285076d6d5354ee",
+    "semantic_hash": ""
+  },
+  "docs/research/02-why-permission-aware-rag.md": {
+    "mtime": 1794868000.9487839,
+    "ast_hash": "58d7a59d23b03238273842fc6e644beb",
+    "semantic_hash": ""
+  },
+  "docs/research/03-stack-choices.md": {
+    "mtime": 1794868022.071612,
+    "ast_hash": "06f65f4db2f68ff3e4c110c614677401",
+    "semantic_hash": ""
+  },
+  "frontend/README.md": {
+    "mtime": 1794868270.579062,
+    "ast_hash": "1b44606b25e0d36d15d68e5b1f829604",
+    "semantic_hash": ""
+  },
+  "frontend/index.html": {
+    "mtime": 1794868270.4962895,
+    "ast_hash": "8b795395fe865d013cd3c0fad1553813",
+    "semantic_hash": ""
+  },
+  "plan.md": {
+    "mtime": 1794868439.910892,
+    "ast_hash": "5ee1cf02d146652477888303d4dbbca4",
+    "semantic_hash": ""
+  },
+  "frontend/public/favicon.svg": {
+    "mtime": 1794868184.1256697,
+    "ast_hash": "7e840862161341271697daa99a40d76b",
+    "semantic_hash": ""
+  }
+}

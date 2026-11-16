@@ -1,0 +1,45 @@
+# Secrets: never commit these
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+secrets/
+credentials*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+
+# Node / frontend
+node_modules/
+dist/
+*.tsbuildinfo
+coverage/
+
+# Claude Code local-only files
+.claude/settings.local.json
+.claude/CLAUDE.local.json
+CLAUDE.local.md
+
+# graphify: the graph is tracked, its dated backups are not
+graphify-out/20*/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# graphify: rebuildable extraction cache
+graphify-out/cache/

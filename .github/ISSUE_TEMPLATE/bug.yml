@@ -1,0 +1,37 @@
+name: Bug
+description: Something behaves wrongly
+labels: ["bug"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: What happened, what was expected, and how to reproduce it.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      value: |
+        **In:**
+        -
+
+        **Out:**
+        -
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ] A test that fails before the fix and passes after it
+        - [ ] PR explains the root cause, the evidence and why the fix works
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Evidence
+      description: Tracebacks, logs, versions.
