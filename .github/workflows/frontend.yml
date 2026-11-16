@@ -1,0 +1,58 @@
+# Frontend CI: lint, type check, tests, build.
+#
+# Kept lean on GitHub Actions minutes (private repo, limited free allowance):
+#   - runs on pull requests only (plus manual runs), never on push to main:
+#     the PR run already tested what gets merged
+#   - workflow-level `paths:` filter, so it only runs when frontend files change;
+#     docs-only PRs (docs/, logs/, graphify-out/, *.md) run nothing
+#   - a newer push to the same PR cancels the older run
+# These checks are the merge gate. Path-filtered workflows can't be required
+# status checks, so "merge only on green" is enforced by the rule in
+# .claude/rules/issue-workflow.md: every check that started must be green.
+name: frontend
+
+on:
+  pull_request:
+    paths:
+      - "frontend/**"
+      - "!frontend/**/*.md"
+      - ".github/workflows/frontend.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: frontend-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies (exact versions from package-lock.json)
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Tests
+        run: npm test
+
+      - name: Build
+        run: npm run build

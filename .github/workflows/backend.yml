@@ -1,0 +1,57 @@
+# Backend CI: lint, format check, type check, tests.
+#
+# Kept lean on GitHub Actions minutes (private repo, limited free allowance):
+#   - runs on pull requests only (plus manual runs), never on push to main:
+#     the PR run already tested what gets merged
+#   - workflow-level `paths:` filter, so it only runs when backend files change;
+#     docs-only PRs (docs/, logs/, graphify-out/, *.md) run nothing
+#   - a newer push to the same PR cancels the older run
+# These checks are the merge gate. Path-filtered workflows can't be required
+# status checks, so "merge only on green" is enforced by the rule in
+# .claude/rules/issue-workflow.md: every check that started must be green.
+name: backend
+
+on:
+  pull_request:
+    paths:
+      - "backend/**"
+      - "!backend/**/*.md"
+      - ".github/workflows/backend.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: backend-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+          cache-dependency-glob: backend/uv.lock
+
+      - name: Install dependencies (exact versions from uv.lock)
+        run: uv sync --locked --python 3.13
+
+      - name: Lint
+        run: uv run ruff check .
+
+      - name: Format check
+        run: uv run ruff format --check .
+
+      - name: Type check
+        run: uv run mypy
+
+      - name: Tests
+        run: uv run pytest

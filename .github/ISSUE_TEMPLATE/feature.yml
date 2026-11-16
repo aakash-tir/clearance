@@ -1,0 +1,43 @@
+name: Feature
+description: One small, single-concept piece of work (one PR in size)
+labels: ["feature"]
+body:
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why this is needed and where it fits in the plan.
+    validations:
+      required: true
+  - type: textarea
+    id: learn
+    attributes:
+      label: What you will learn
+      description: The concept(s) this issue teaches, in one or two lines.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      value: |
+        **In:**
+        -
+
+        **Out:**
+        -
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      value: |
+        - [ ]
+        - [ ] PR explains every changed file and every test (learning mode)
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / Evidence
